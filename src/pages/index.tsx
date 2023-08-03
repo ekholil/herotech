@@ -10,7 +10,7 @@ export default function Home({ products }: any) {
   );
 }
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("https://herotech-ekholil.vercel.app/api/products");
   const products = await res.json();
   return {
     props: {

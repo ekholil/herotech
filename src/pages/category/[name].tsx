@@ -66,7 +66,7 @@ const ProductDetails = ({ products }: { products: Iproduct[] }) => {
 export default ProductDetails;
 
 export const getStaticPaths = async () => {
-  const res = await fetch(`http://localhost:3000/api/products`);
+  const res = await fetch(`https://herotech-ekholil.vercel.app/api/products`);
   const data = await res.json();
   const uniqueCategories = new Set();
 
@@ -84,7 +84,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
-  const res = await fetch(`http://localhost:3000/api/products`);
+  const res = await fetch(`https://herotech-ekholil.vercel.app/api/products`);
   const data = await res.json();
 
   return {
