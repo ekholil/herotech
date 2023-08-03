@@ -44,14 +44,14 @@ const Navbar = () => {
             {session?.user?.email ? (
               <button
                 onClick={() => signOut()}
-                className="py-3 px-5 bg-red-400 rounded-lg text-white border-none"
+                className="py-3 px-5 bg-red-400 rounded-lg text-white border-none cursor-pointer"
               >
                 Logout
               </button>
             ) : (
               <button
-                className="py-3 px-5 rounded-lg bg-blue-600 text-white border-none"
-                onClick={() => signIn()}
+                className="py-3 px-5 rounded-lg bg-blue-600 text-white border-none cursor-pointer"
+                onClick={() => signIn("github")}
               >
                 ٍSign In
               </button>

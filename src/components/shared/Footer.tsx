@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="bg-[#091E43]">
+    <footer>
       <div className="py-[60px] lg:py-[120px]">
         <div className="container">
-          <div className="grid grid-cols-12 gap-6 text-white px-3 xl:px-0">
+          <div className="grid grid-cols-12 gap-6  px-3 xl:px-0">
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
-              <Link href="/" className="inline-block mb-6 text-3xl font-bold">
+              <Link href="/" className="inline-block  mb-6 text-3xl font-bold">
                 HeroTech
               </Link>
               <p className="clr-neutral-30 mb-6">
@@ -16,56 +16,14 @@ const Footer = () => {
                 selection of flights, hotels, and rental cars to help you plan
                 the perfect trip.
               </p>
-              <ul className="flex gap-3 flex-wrap">
-                <li>
-                  <Link
-                    href="#"
-                    className="border border-[#3538ED] duration-300 hover:bg-[#3538ED] grid place-content-center p-[10px] rounded-full"
-                  >
-                    <i className="lab la-facebook-f text-xl"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border border-[#3538ED] duration-300 hover:bg-[#3538ED] grid place-content-center p-[10px] rounded-full"
-                  >
-                    <i className="lab la-twitter text-xl"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border border-[#3538ED] duration-300 hover:bg-[#3538ED] grid place-content-center p-[10px] rounded-full"
-                  >
-                    <i className="lab la-linkedin-in text-xl"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border border-[#3538ED] duration-300 hover:bg-[#3538ED] grid place-content-center p-[10px] rounded-full"
-                  >
-                    <i className="lab la-instagram text-xl"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="border border-[#3538ED] duration-300 hover:bg-[#3538ED] grid place-content-center p-[10px] rounded-full"
-                  >
-                    <i className="lab la-dribbble text-xl"></i>
-                  </Link>
-                </li>
-              </ul>
             </div>
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
               <h4 className="text-2xl font-semibold mb-6"> Quick Link </h4>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 pl-0">
                 <li>
                   <Link
                     href="/about-us"
-                    className="hover:text-[var(--secondary)] duration-300"
+                    className="hover:text-green-400  duration-300"
                   >
                     About us
                   </Link>
@@ -73,7 +31,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/property-list"
-                    className="hover:text-[var(--secondary)] duration-300"
+                    className="hover:text-green-400  duration-300"
                   >
                     Properties
                   </Link>
@@ -81,7 +39,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/agent"
-                    className="hover:text-[var(--secondary)] duration-300"
+                    className="hover:text-green-400  duration-300"
                   >
                     Agents
                   </Link>
@@ -89,7 +47,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/faq"
-                    className="hover:text-[var(--secondary)] duration-300"
+                    className="hover:text-green-400  duration-300"
                   >
                     FAQs
                   </Link>
@@ -97,7 +55,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="blog-grid"
-                    className="hover:text-[var(--secondary)] duration-300"
+                    className="hover:text-green-400  duration-300"
                   >
                     Blog
                   </Link>
@@ -106,10 +64,9 @@ const Footer = () => {
             </div>
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
               <h4 className="text-2xl font-semibold mb-6"> Contact </h4>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-4 pl-0">
                 <li>
                   <div className="flex items-center gap-4">
-                    <i className="las la-phone-volume bg-primary text-white text-xl p-2 rounded-full"></i>
                     <Link href="tel:3165550116" className="mb-0 clr-neutral-30">
                       (316) 555-0116
                     </Link>
@@ -117,7 +74,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="flex items-center gap-4">
-                    <i className="las la-envelope-open bg-[var(--secondary)] text-[var(--neutral-700)] text-xl p-2 rounded-full"></i>
                     <Link
                       href="mailto:example@mail.com"
                       className="mb-0 clr-neutral-30"
@@ -128,7 +84,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <div className="flex items-center gap-4">
-                    <i className="las la-map-marker-alt bg-[var(--tertiary)] text-[var(--neutral-700)] text-xl p-2 rounded-full"></i>
                     <p className="mb-0 clr-neutral-30">
                       31 Brandy Way, Sutton, SM2 6SE
                     </p>
@@ -141,7 +96,10 @@ const Footer = () => {
               <p className="mb-6 clr-neutral-30">
                 Subscribe our newsletter to get our latest update & news
               </p>
-              <div className="p-2 rounded-full border border-neutral-200">
+              <div
+                className="p-2 rounded-full"
+                style={{ border: "1px solid gray" }}
+              >
                 <form action="#" className="flex items-center">
                   <input
                     type="text"
@@ -161,7 +119,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-span-12">
-            <div className="py-8 border-t border-[#3638bd] text-white">
+            <div className="py-8 border-t border-[#3638bd] ">
               <div className="grid grid-cols-12 gap-4 ">
                 <div className="col-span-12 lg:col-span-6">
                   <p className="m-0 text-center lg:text-start">
@@ -179,7 +137,7 @@ const Footer = () => {
                     <li>
                       <Link
                         href="/help-center"
-                        className="hover:text-[var(--secondary)] duration-300"
+                        className="hover:text-green-400  duration-300"
                       >
                         Help Center
                       </Link>
@@ -187,7 +145,7 @@ const Footer = () => {
                     <li>
                       <Link
                         href="/privacy-policy"
-                        className="hover:text-[var(--secondary)] duration-300"
+                        className="hover:text-green-400  duration-300"
                       >
                         Privacy Policy
                       </Link>
@@ -195,7 +153,7 @@ const Footer = () => {
                     <li>
                       <Link
                         href="/terms"
-                        className="hover:text-[var(--secondary)] duration-300"
+                        className="hover:text-green-400  duration-300"
                       >
                         Terms of Service
                       </Link>
