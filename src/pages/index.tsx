@@ -1,12 +1,20 @@
 import Banner from "@/components/Banner";
-import { Inter } from "next/font/google";
+import Featured from "@/components/Featured";
 
-export const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+export default function Home({ products }: any) {
   return (
-    <main className={`${inter.className}`}>
+    <main>
       <Banner />
+      <Featured products={products.result} />
     </main>
   );
 }
+export const getStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api/products");
+  const products = await res.json();
+  return {
+    props: {
+      products,
+    },
+  };
+};

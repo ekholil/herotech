@@ -8,11 +8,7 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/processor">
         Processor
       </Link>
     ),
@@ -20,11 +16,7 @@ const items: MenuProps["items"] = [
   {
     key: "2",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/motherboard">
         Motherboard
       </Link>
     ),
@@ -32,11 +24,7 @@ const items: MenuProps["items"] = [
   {
     key: "3",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/ram">
         Ram
       </Link>
     ),
@@ -44,11 +32,7 @@ const items: MenuProps["items"] = [
   {
     key: "4",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/power supply">
         Power Supply
       </Link>
     ),
@@ -56,11 +40,7 @@ const items: MenuProps["items"] = [
   {
     key: "5",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/storage device">
         Storage Device
       </Link>
     ),
@@ -68,11 +48,7 @@ const items: MenuProps["items"] = [
   {
     key: "6",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/monitor">
         Monitors
       </Link>
     ),
@@ -80,11 +56,7 @@ const items: MenuProps["items"] = [
   {
     key: "7",
     label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
+      <Link rel="noopener noreferrer" href="/category/others">
         Others
       </Link>
     ),
